@@ -96,7 +96,7 @@
     Popcorn.extend( Popcorn.p, parser );
 
     // keys the function name by filetype extension
-    //Popcorn.parsers[ name ] = true;
+    Popcorn.parsers[ name ] = definition;
 
     return parser;
   };
