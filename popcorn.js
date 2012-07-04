@@ -722,6 +722,10 @@
 
         }
 
+        if (Popcorn._log_event) {
+          Popcorn._log_event(data)
+        }
+
         return this;
       },
       listen: function( type, fn ) {
