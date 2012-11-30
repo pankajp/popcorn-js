@@ -459,6 +459,9 @@
         instance.data.timeUpdate && instance.media.removeEventListener( "timeupdate", instance.data.timeUpdate, false );
         instance.isDestroyed = true;
       }
+
+      // Remove the popcorn instance from Popcorn.instances cache
+      Popcorn.instances.splice( Popcorn.instances.indexOf( instance ), 1 );
     }
   });
 
