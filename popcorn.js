@@ -726,7 +726,7 @@
         }
 
         if (Popcorn._log_event) {
-          Popcorn._log_event(data)
+          Popcorn._log_event(data, type)
         }
 
         return this;
